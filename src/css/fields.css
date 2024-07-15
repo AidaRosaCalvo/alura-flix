@@ -1,0 +1,102 @@
+/*
+* Estilos para los componentes:
+    * Field
+    * Textarea
+    * SelectField
+*/
+
+.input-wrapper {
+  /*Layout*/
+  display: flex;
+  flex-direction: column;
+  gap: 0.94rem;
+}
+
+.input-wrapper label {
+  /*Font*/
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem; /* 120% */
+  /*Layout*/
+  display: block;
+}
+
+.input-wrapper label.invalid {
+  color: #e53935;
+}
+
+.field {
+  /*Font*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem; /* 120% */
+  color: #fff;
+  /*Size*/
+  padding: 0.5rem 1rem;
+  /*Style*/
+  border-radius: 0.625rem;
+  border: 3px solid;
+}
+.field:focus {
+  outline: none;
+}
+/*Estilos para campos del formulario editar video*/
+.edit-field {
+  /*Style*/
+  background: #03122f;
+  /*Size*/
+  border-color: var(--Blue, #2271d1);
+}
+
+/*Estilos para campos del formulario crear video*/
+.create-field {
+  /*Style*/
+  background: #191919;
+  /*Size*/
+  border-color: var(--Dark-Grey, #262626);
+}
+
+/*Estilos para errores*/
+.input-wrapper input.invalid,
+.input-wrapper textarea.invalid,
+.input-wrapper select.invalid {
+  border-color: #e53935;
+}
+.input-wrapper input.invalid::placeholder,
+.input-wrapper textarea.invalid::placeholder,
+.input-wrapper select.invalid {
+  color: #e53935;
+}
+.input-wrapper select.invalid option {
+  color: #fff;
+}
+
+/*Tablet 900px a 800px*/
+@media (max-width: 900px) {
+  .input-wrapper label {
+    /*Font*/
+    font-size: 1.2rem;
+  }
+
+  .field {
+    /*Font*/
+    font-size: 0.8rem;
+  }
+}
+
+/*Movil 799px a 0px*/
+@media (max-width: 799px) {
+  .input-wrapper label {
+    /*Font*/
+    font-size: 0.9rem;
+  }
+  .field {
+    /*Font*/
+    font-size: 0.8rem;
+  }
+}

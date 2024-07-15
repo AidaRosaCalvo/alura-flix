@@ -1,0 +1,32 @@
+.button {
+  /*Button styles*/
+  all: unset;
+  border: 0.125rem solid; /* 2px */
+  border-color: var(--x-color-gray-light);
+  border-radius: 0.625rem;
+  box-sizing: border-box;
+  position: relative;
+  width: 11.25rem; /* 180px */
+  height: 3.375rem; /* 54px */
+  
+  /*Text*/
+  text-align: center;
+  color: #ffffff;
+  font-family: "Source Sans Pro-Black", Helvetica;
+  font-size: 1.125rem; /* 18px */
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1.5rem; /* 24px */
+}
+
+.button:disabled {
+  border-color: var(--variable-collection-light-gray);
+  color: var(--variable-collection-light-gray);
+}
+
+.button:disabled:hover {
+  border: 0.125rem solid var(--variable-collection-light-gray) !important; /* 2px */
+  color: var(--variable-collection-light-gray);
+  background: transparent !important;
+  box-shadow: none !important;
+}
